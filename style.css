@@ -1,1 +1,78 @@
-/* Add styles here */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.ball-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.ball {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333;
+  box-shadow: inset -3px -3px 5px rgba(0,0,0,0.1), 3px 3px 5px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.ball.active {
+  transform: scale(1.1);
+  color: white;
+}
+
+button {
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:active {
+  transform: translateY(2px);
+}
+
+/* 로또 번호대별 색상 */
+.color-1 { background-color: #fbc400; color: #fff; } /* 1-10 */
+.color-11 { background-color: #69c8f2; color: #fff; } /* 11-20 */
+.color-21 { background-color: #ff7272; color: #fff; } /* 21-30 */
+.color-31 { background-color: #aaa; color: #fff; }    /* 31-40 */
+.color-41 { background-color: #b0d840; color: #fff; } /* 41-45 */

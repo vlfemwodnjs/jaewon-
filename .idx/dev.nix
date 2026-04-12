@@ -1,3 +1,7 @@
+
+
+
+
 # To learn more about how to use Nix to configure your environment
 # see: https://developers.google.com/idx/guides/customize-idx-env
 { pkgs, ... }: {
@@ -7,6 +11,7 @@
   packages = [
     pkgs.nodejs_22
     pkgs.python3
+    pkgs.github-cli
   ];
   # Sets environment variables in the workspace
   env = {};
