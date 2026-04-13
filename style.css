@@ -8,12 +8,12 @@
 }
 
 body.dark {
-  --bg-color: #1a1a1a;
-  --container-bg: #2d2d2d;
-  --text-color: #f0f2f5;
-  --ball-bg: #444444;
-  --ball-text: #f0f2f5;
-  --shadow: rgba(0, 0, 0, 0.5);
+  --bg-color: #000000;
+  --container-bg: #1a1a1a;
+  --text-color: #ffffff;
+  --ball-bg: #333333;
+  --ball-text: #ffffff;
+  --shadow: rgba(255, 255, 255, 0.1);
 }
 
 body {
