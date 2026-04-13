@@ -67,9 +67,21 @@ h1 {
 .ball-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 10px;
   margin-bottom: 2rem;
   flex-wrap: wrap;
+}
+
+.plus-sign {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text-color);
+  margin: 0 5px;
+}
+
+.ball.bonus {
+  border: 3px solid var(--text-color);
 }
 
 .ball {
