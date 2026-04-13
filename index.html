@@ -3,184 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>한양대학교 ERICA - 혁신의 중심</title>
+    <title>제휴 문의 - Partnership Inquiry</title>
     <style>
-        :root {
-            --hanyang-blue: #003366;
-            --hanyang-gold: #8C734B;
-            --light-bg: #f8f9fa;
-            --text-dark: #333;
-        }
-
         body {
-            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: #f3f4f6;
             margin: 0;
-            padding: 0;
-            background-color: var(--light-bg);
-            color: var(--text-dark);
-            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
         }
-
-        header {
-            background-color: var(--hanyang-blue);
-            color: white;
-            padding: 4rem 2rem;
-            text-align: center;
-            background-image: linear-gradient(rgba(0,51,102,0.8), rgba(0,51,102,0.8)), url('https://images.unsplash.com/photo-1541339907198-e08756ebafe3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
-            background-size: cover;
-            background-position: center;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 3rem;
-            letter-spacing: -1px;
-        }
-
-        header p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-        }
-
-        nav {
-            background: white;
-            padding: 1rem;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            z-index: 1000;
-        }
-
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: var(--hanyang-blue);
-            font-weight: bold;
-        }
-
-        .container {
-            max-width: 1000px;
-            margin: 2rem auto;
-            padding: 0 2rem;
-        }
-
-        .section {
-            background: white;
-            padding: 3rem;
-            border-radius: 15px;
-            margin-bottom: 2rem;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-        }
-
-        .section h2 {
-            color: var(--hanyang-blue);
-            border-bottom: 2px solid var(--hanyang-gold);
-            display: inline-block;
-            padding-bottom: 5px;
-            margin-top: 0;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
-        }
-
         .card {
-            background: var(--light-bg);
-            padding: 1.5rem;
-            border-radius: 10px;
-            border-left: 5px solid var(--hanyang-blue);
+            background: white;
+            padding: 2.5rem;
+            border-radius: 1rem;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            width: 100%;
+            max-width: 400px;
         }
-
-        .card h3 {
-            margin-top: 0;
-            color: var(--hanyang-blue);
-        }
-
-        footer {
-            background: var(--hanyang-blue);
-            color: white;
+        h2 {
+            margin: 0 0 0.5rem 0;
+            font-size: 1.5rem;
+            color: #111827;
             text-align: center;
-            padding: 2rem;
-            margin-top: 4rem;
         }
-
-        .btn {
-            display: inline-block;
-            background: var(--hanyang-gold);
+        p {
+            margin: 0 0 2rem 0;
+            color: #6b7280;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 1.25rem;
+        }
+        label {
+            display: block;
+            font-size: 0.875rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            color: #374151;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #d1d5db;
+            border-radius: 0.5rem;
+            box-sizing: border-box;
+            font-size: 1rem;
+        }
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #2563eb;
+            border-width: 2px;
+        }
+        button {
+            width: 100%;
+            padding: 0.875rem;
+            background-color: #2563eb;
             color: white;
-            padding: 10px 25px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background 0.3s;
+            border: none;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s;
         }
-
-        .btn:hover {
-            background: #6d593a;
+        button:hover {
+            background-color: #1d4ed8;
+        }
+        .footer {
+            margin-top: 1.5rem;
+            text-align: center;
+            font-size: 0.75rem;
+            color: #9ca3af;
         }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>HANYANG UNIVERSITY ERICA</h1>
-    <p>The Answer for the Future, ERICA</p>
-</header>
-
-<nav>
-    <a href="#about">캠퍼스 소개</a>
-    <a href="#industry">학연산 협력</a>
-    <a href="#departments">주요 학과</a>
-    <a href="lotto.html">로또 추첨기 가기</a>
-</nav>
-
-<div class="container">
-    <div id="about" class="section">
-        <h2>캠퍼스 소개</h2>
-        <p>한양대학교 ERICA 캠퍼스는 경기도 안산시에 위치한 대한민국의 대표적인 학연산 클러스터 중심 대학입니다. <b>Education, Research, Industry Cluster at Ansan</b>의 약자인 ERICA는 그 이름에 걸맞게 실용 학문의 최고봉을 지향합니다.</p>
-        <p>넓고 평탄한 캠퍼스 부지와 현대적인 시설, 그리고 수도권 최고의 접근성을 자랑합니다.</p>
-    </div>
-
-    <div id="industry" class="section">
-        <h2>국내 최고의 학연산 협력</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>학연산 클러스터</h3>
-                <p>대학, 연구소, 기업이 한곳에 모여 시너지를 내는 국내 유일의 혁신 모델입니다.</p>
-            </div>
-            <div class="card">
-                <h3>LINC 3.0</h3>
-                <p>3단계 산학연협력 선도대학 육성사업을 통해 학생들의 취업과 창업을 강력하게 지원합니다.</p>
-            </div>
-            <div class="card">
-                <h3>카카오 데이터센터</h3>
-                <p>캠퍼스 내 카카오 데이터센터 유치로 미래 IT 산업의 전초기지 역할을 수행합니다.</p>
-            </div>
+<div class="card">
+    <h2>제휴 문의</h2>
+    <p>정보를 입력하시면 담당자가 연락드립니다.</p>
+    
+    <form action="https://formspree.io/f/xjgjbnkz" method="POST">
+        <div class="form-group">
+            <label>이름 / 기업명</label>
+            <input type="text" name="name" required placeholder="예: 홍길동">
         </div>
-    </div>
-
-    <div id="departments" class="section">
-        <h2>주요 단과대학</h2>
-        <ul>
-            <li>공학대학 (소프트웨어, 로봇 등 미래 산업 주도)</li>
-            <li>소프트웨어융합대학 (AI, 데이터 사이언스 특화)</li>
-            <li>약학대학 (국내 최고 수준의 연구 환경)</li>
-            <li>디자인대학 (글로벌 감각의 디자인 인재 양성)</li>
-            <li>언론정보대학 (미디어 산업의 리더 배출)</li>
-        </ul>
-        <div style="text-align: center; margin-top: 2rem;">
-            <a href="https://www.hanyang.ac.kr/web/erica" target="_blank" class="btn">공식 홈페이지 방문</a>
+        
+        <div class="form-group">
+            <label>이메일</label>
+            <input type="email" name="email" required placeholder="example@email.com">
         </div>
+        
+        <div class="form-group">
+            <label>문의 내용</label>
+            <textarea name="message" rows="5" required placeholder="문의하실 내용을 입력해 주세요"></textarea>
+        </div>
+        
+        <button type="submit">문의하기</button>
+    </form>
+    
+    <div class="footer">
+        &copy; 2026 Partnership Center
     </div>
 </div>
-
-<footer>
-    <p>&copy; 2026 한양대학교 ERICA 홍보 팬페이지 | 사랑의 실천</p>
-</footer>
 
 </body>
 </html>
