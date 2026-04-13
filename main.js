@@ -1,3 +1,27 @@
+// 테마 전환 기능
+const themeToggle = document.getElementById('theme-toggle');
+const body = document.body;
+
+// 초기 테마 설정 확인
+const currentTheme = localStorage.getItem('theme');
+if (currentTheme === 'dark') {
+  body.classList.add('dark');
+  themeToggle.textContent = '☀️ Light Mode';
+}
+
+themeToggle.addEventListener('click', () => {
+  body.classList.toggle('dark');
+  
+  let theme = 'light';
+  if (body.classList.contains('dark')) {
+    theme = 'dark';
+    themeToggle.textContent = '☀️ Light Mode';
+  } else {
+    themeToggle.textContent = '🌙 Dark Mode';
+  }
+  localStorage.setItem('theme', theme);
+});
+
 document.getElementById('draw-btn').addEventListener('click', function() {
   const lottoNumbers = generateLottoNumbers();
   const ballElements = document.querySelectorAll('.ball');
